@@ -55,10 +55,10 @@ const CardDetails = ({params}: {params: { id: string }}) => {
                     <ul className="list-disc pl-4">
                         {opening?.benefits.map((benefit, index) => {
                             return (
-                                <div key={index}>
-                                    <h2>{benefit?.title}</h2>
+                                <li key={index} className="mb-4">
+                                    <h2 className="text-lg font-bold">{benefit?.title}</h2>
                                     <p>{benefit?.description}</p>
-                                </div>
+                                </li>
                             )
                         })}
                     </ul>
