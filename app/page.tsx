@@ -5,6 +5,7 @@ import {marked} from "marked";
 import {openings} from "@/constants/openings";
 import {useEffect, useState} from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -40,6 +41,7 @@ export default function Home() {
     <main className="grid grid-cols-1 lg:grid-cols-2 gap-24 p-8 lg:p-24">
         <section className="space-y-8">
             <div>
+                <Image className="mb-4" src="/kili.png" alt="Kili logo" width={100} height={100}/>
                 <h1 className="text-4xl font-bold mb-4">
                     {CompanyAbout.heading}
                 </h1>
