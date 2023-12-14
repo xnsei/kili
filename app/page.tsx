@@ -11,8 +11,19 @@ export default function Home() {
     const [filteredOpenings, setFilteredOpenings] = useState([...openings]);
     const [teamFilter, setTeamFilter] = useState('All');
     const [locationFilter, setLocationFilter] = useState('All');
-    const uniqueTeams = [...new Set(openings.map((opening) => opening.team))];
-    const uniqueLocations = [...new Set(openings.map((opening) => opening.location))];
+    const uniqueTeams: string[] = [];
+    openings.forEach((opening) => {
+        if (!uniqueTeams.includes(opening.team)) {
+            uniqueTeams.push(opening.team);
+        }
+    });
+
+    const uniqueLocations: string[] = [];
+    openings.forEach((opening) => {
+        if (!uniqueLocations.includes(opening.location)) {
+            uniqueLocations.push(opening.location);
+        }
+    });
 
     useEffect(() => {
         let filtered = openings;
