@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
 
@@ -8,7 +9,7 @@ export default function Navbar() {
             <div className="container h-14 max-w-screen-2xl items-center">
                 <div className="mr-4 hidden md:flex justify-between items-center mt-2 mx-4 px-4">
                         <div className="mr-4 flex items-center cursor-pointer">
-                            <img src="/kili.png" alt="logo" className="h-12 mr-2"/>
+                            <Image className="mr-2" src="/kili.png" alt="Kili logo" width={48} height={48}/>
                             <h1 className="text-center sm:inline-block text-3xl font-bold">Kili</h1>
                         </div>
                     <nav className="flex items-center gap-6 text-sm">

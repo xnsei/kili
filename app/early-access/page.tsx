@@ -20,8 +20,11 @@ interface formDataInterface {
 
 export default function AccessForm() {
 
-    const storedData: formDataInterface = JSON.parse(localStorage.getItem("formData"));
-    console.log(storedData);
+    let storedData: formDataInterface | null = null;
+
+    if (typeof window !== 'undefined') {
+        storedData = JSON.parse(localStorage.getItem("formData") || 'null');
+    }
 
     const [interest, setInterest] = useState(storedData && storedData.interest ? storedData.interest : "");
     const [call, setCall] = useState(storedData && storedData.call ? storedData.call : "");
@@ -65,7 +68,7 @@ export default function AccessForm() {
                 Sales and marketing teams have to hop through multiple tools to get work done. Our AI
                 assistant completes tasks for you so that you can focus on the important stuff.</p>
             <p className="text-foreground/70 mt-4">Please complete the form below for early access.</p>
-            <h3 className="text-xl font-medium mt-8">Whats your name?</h3>
+            <h3 className="text-xl font-medium mt-8">What is your name?</h3>
             <input
                 onChange={(e) => setName(e.target.value)}
                 value={name}
@@ -74,7 +77,7 @@ export default function AccessForm() {
                 className="text-foreground/70 px-4 py-2 border border-gray-300 rounded mt-2 shadow-sm w-full md:w-80"
                 required
             />
-            <h3 className="text-xl font-medium mt-8">What's your company email address?</h3>
+            <h3 className="text-xl font-medium mt-8">What is your company email address?</h3>
             <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
@@ -108,7 +111,7 @@ export default function AccessForm() {
                 required={true}
             />
             <button className="bg-black text-white px-4 py-2 rounded mt-8 shadow-sm">
-                Request Access ->
+                Request Access
             </button>
         </div>
     )
@@ -121,8 +124,11 @@ function SelectDemo({currentValue, setCurrentValue, options, required = true}: {
     required: boolean
 }) {
     return (
-        <Select required={required} value={currentValue.length > 0 ? currentValue : undefined}
-                onValueChange={(value) => setCurrentValue(value)}>
+        <Select
+            required={required}
+            value={currentValue.length > 0 ? currentValue! : undefined}
+            onValueChange={(value) => setCurrentValue(value)}
+        >
             <SelectTrigger className="w-full md:w-80 border border-gray-300 shadow-sm">
                 <SelectValue placeholder="Select an option"/>
             </SelectTrigger>
