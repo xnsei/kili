@@ -10,9 +10,11 @@ import Footer from "@/components/Footer";
 export default function Home() {
     return (
         <main className="w-full">
-            <SlideDown>
-                <Navbar/>
-            </SlideDown>
+            <div className="sticky top-0 z-40">
+                <SlideDown>
+                    <Navbar/>
+                </SlideDown>
+            </div>
             <div className="top-0 flex flex-col justify-center items-center min-h-screen">
                 <div>
                     <div className="flex flex-col justify-center items-center">
@@ -39,7 +41,7 @@ export default function Home() {
                     </FadeIn>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </main>
     )
 }
