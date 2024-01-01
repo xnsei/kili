@@ -21,7 +21,7 @@ interface formDataInterface {
     tools: string,
 }
 
-function AccessForm(suppressHydrationWarning = true) {
+function AccessForm() {
     let storedData: formDataInterface | null = null;
 
     if (typeof window !== 'undefined') {
@@ -58,21 +58,17 @@ function AccessForm(suppressHydrationWarning = true) {
         "Managing the sales process",
     ]
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
         toast(("Access requested successfully"), {
-            description: (
-                <div>
-                    <p className="">We'll be in touch soon.</p>
-                </div>
-            ),
-            type: "success",
+            description: "We'll be in touch soon!",
+            // type: "success",
         })
     }
 
     return (
         <div className="container max-w-screen-md items center my-12 md:my-24">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={(e) => handleSubmit}>
                 <h1 className="text-3xl md:text-4xl md:py-8 font-bold">
                     The AI platform for revenue teams
                 </h1>
@@ -138,7 +134,7 @@ function AccessForm(suppressHydrationWarning = true) {
     )
 }
 
-function SelectDemo({currentValue, setCurrentValue, options, required = true}: {
+function SelectDemo({currentValue, setCurrentValue, options, required}: {
     currentValue: string,
     setCurrentValue: React.Dispatch<React.SetStateAction<string>>,
     options: Array<string>,

@@ -6,8 +6,8 @@ export default function Navbar() {
     return (
         <div
             className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container grid grid-cols-1 h-14 max-w-screen-2xl items-center">
-                <div className="mr-4 flex justify-between items-center mt-2 mx-4 px-4">
+            <div className="container grid grid-cols-1 h-16 max-w-screen-2xl items-center">
+                <div className="mr-4 flex justify-between items-center mx-4 px-4">
                     <div className="mr-4 flex items-center cursor-pointer">
                         <Image className="mr-2" src="/kili.png" alt="Kili logo" width={48} height={48}/>
                         <h1 className="text-center sm:inline-block text-3xl font-bold">Kili</h1>

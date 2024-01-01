@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {LinkedInLogoIcon, TwitterLogoIcon} from "@radix-ui/react-icons";
 import Terms from "@/components/Terms";
+import Privacy from "@/components/Privacy";
 
 export default function Footer() {
     return (
@@ -25,7 +26,7 @@ export default function Footer() {
                             Careers
                         </Link>
                         <Terms/>
-                        <p className="text-muted-foreground">Privacy</p>
+                        <Privacy/>
                     </div>
                     <div className="col-span-3 sm:col-span-1">
                         <h1 className="text-2xl font-bold mb-4">Support</h1>

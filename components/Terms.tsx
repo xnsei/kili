@@ -13,11 +13,11 @@ export default function Terms() {
     return (
         <Dialog>
             <DialogTrigger className="text-muted-foreground hover:text-blue-600 hover:underline">Terms</DialogTrigger>
-            <DialogContent className="w-full sm:max-w-lg">
+            <DialogContent className="w-full sm:max-w-xl">
                 <DialogHeader className="text-2xl">
                     <DialogTitle className="text-2xl font-bold">{CompanyAbout.title}</DialogTitle>
                 </DialogHeader>
-                <ScrollArea className="h-[600px]">
+                <ScrollArea className="h-[800px]">
                     <div className="mb-2">
                         {CompanyAbout.description.map(description => {
                             return (
