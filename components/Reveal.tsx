@@ -5,6 +5,7 @@ export default function Reveal({children, width = "fit-content"}: {
     children: JSX.Element,
     width?: "fit-content" | "100%"
 }) {
+    const color = "#4f46e5";
 
     return (
         <div style={{position: "relative", width, overflow: "hidden"}}>
@@ -34,7 +35,7 @@ export default function Reveal({children, width = "fit-content"}: {
                     left: 0,
                     right: 0,
                     zIndex: 20,
-                    backgroundColor: "rgba(120, 120, 120, 1)",
+                    backgroundColor: color,
                 }}
             >
             </motion.div>
