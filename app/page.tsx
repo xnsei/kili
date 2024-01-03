@@ -17,8 +17,8 @@ export default function Home() {
                 </SlideDown>
             </div>
             <div className="top-0 flex flex-col justify-center items-center min-h-screen">
-                <div className="grid grid-cols-2 gap-4 items-center">
-                    <div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+                    <div className="order-2 lg:order-1">
                         <div className="flex flex-col justify-center items-center">
                             <Reveal>
                                 <div className="mx-auto text-center">
@@ -33,7 +33,7 @@ export default function Home() {
                                 <p className="text-center max-w-screen-sm text-lg sm:text-2xl mt-8">
                                     Transform the way your sales and marketing teams operate by leveraging AI
                                 </p>
-                                <Link className="mt-4 bg-black text-white px-4 py-2 rounded no-underline font-medium"
+                                <Link className="mt-4 bg-indigo-600 text-white px-4 py-2 rounded no-underline font-medium"
                                       href={"/early-access"}
                                 >
                                     Early Access
@@ -41,7 +41,7 @@ export default function Home() {
                             </div>
                         </FadeIn>
                     </div>
-                    <div>
+                    <div className="order-1 lg:order-2">
                         <SlideLeft>
                             <img src="/Hero.jpg" alt="hero" className="w-full"/>
                         </SlideLeft>
