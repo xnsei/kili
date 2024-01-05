@@ -2,13 +2,14 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import Reveal from "@/components/Reveal";
-import SlideDown from "@/components/SlideDown";
+import Reveal from "@/components/Framer/Reveal";
+import SlideDown from "@/components/Framer/SlideDown";
 import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
 import Features from "@/components/Features";
 import CallToAction from "@/components/CallToAction";
+import Pricing from "@/components/Pricing";
 
 export default function Home() {
     return (
@@ -57,6 +58,7 @@ export default function Home() {
                 <About/>
             </FadeIn>
             <Features/>
+            <Pricing/>
             <CallToAction/>
             <Footer/>
         </main>

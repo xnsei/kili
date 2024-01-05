@@ -10,8 +10,8 @@ export default function Features() {
             <p className="text-sm md:text-base text-muted-foreground text-center">Unlock the power of AI to transform
                 your sales and
                 marketing operations</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 lg:px-24 mt-16">
-                <div className="bg-white rounded px-8 py-4 grid grid-cols-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 lg:px-24 mt-16 max-w-screen-2xl mx-auto">
+                <div className="bg-white rounded px-8 py-4 grid grid-cols-12 shadow">
                     <CubeIcon className="col-span-1 w-6 h-6 text-indigo-600 mr-4"/>
                     <div className="col-span-11">
                         <h1 className="text-xl font-medium mb-2">Intelligent Automation</h1>
@@ -20,7 +20,7 @@ export default function Features() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white rounded px-8 py-4 grid grid-cols-12">
+                <div className="bg-white rounded px-8 py-4 grid grid-cols-12 shadow">
                     <CubeIcon className="col-span-1 w-6 h-6 text-indigo-600 mr-4"/>
                     <div className="col-span-11">
                         <h1 className="text-xl font-medium mb-2">Tailored Research Solutions</h1>
@@ -29,7 +29,7 @@ export default function Features() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white rounded px-8 py-4 grid grid-cols-12">
+                <div className="bg-white rounded px-8 py-4 grid grid-cols-12 shadow">
                     <CubeIcon className="col-span-1 w-6 h-6 text-indigo-600 mr-4"/>
                     <div className="col-span-11">
                         <h1 className="text-xl font-medium mb-2">Real-time Information Digest</h1>
@@ -38,7 +38,7 @@ export default function Features() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white rounded px-8 py-4 grid grid-cols-12">
+                <div className="bg-white rounded px-8 py-4 grid grid-cols-12 shadow">
                     <CubeIcon className="col-span-1 w-6 h-6 text-indigo-600 mr-4"/>
                     <div className="col-span-11">
                         <h1 className="text-xl font-medium mb-2">Dynamic CRM Integration</h1>

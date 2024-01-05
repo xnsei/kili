@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 py-24 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 py-24 items-center max-w-screen-2xl mx-auto">
             <div className="flex flex-col justify-center mx-16 mb-4">
                 <h1 className="font-bold text-3xl mb-4">About Kili</h1>
                 <p className="text-muted-foreground max-w-screen-sm text-sm lg:text-lg">
