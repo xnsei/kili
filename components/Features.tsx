@@ -15,7 +15,7 @@ export default function Features() {
                     <CubeIcon className="col-span-1 w-6 h-6 text-indigo-600 mr-4"/>
                     <div className="col-span-11">
                         <h1 className="text-xl font-medium mb-2">Intelligent Automation</h1>
-                        <div className="text-sm text-muted-foreground">Streamline tasks effortlessly with Kili's
+                        <div className="text-sm text-muted-foreground">Streamline tasks effortlessly with Kili&apos;s
                             AI-driven automation, freeing up valuable time for more strategic endeavors.
                         </div>
                     </div>
@@ -33,7 +33,7 @@ export default function Features() {
                     <CubeIcon className="col-span-1 w-6 h-6 text-indigo-600 mr-4"/>
                     <div className="col-span-11">
                         <h1 className="text-xl font-medium mb-2">Real-time Information Digest</h1>
-                        <div className="text-sm text-muted-foreground">Stay informed effortlessly with Kili's weekly
+                        <div className="text-sm text-muted-foreground">Stay informed effortlessly with Kili&apos;s weekly
                             news updates, delivering personalized insights on topics like X straight to your inbox.
                         </div>
                     </div>
