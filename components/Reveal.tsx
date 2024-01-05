@@ -5,7 +5,7 @@ export default function Reveal({children, width = "fit-content"}: {
     children: JSX.Element,
     width?: "fit-content" | "100%"
 }) {
-    const color = "#4f46e5";
+    const color = "#ffffff";
 
     return (
         <div style={{position: "relative", width, overflow: "hidden"}}>
